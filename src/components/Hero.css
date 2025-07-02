@@ -1,0 +1,54 @@
+.img-wrapper {
+  width: 95vw;
+  height: 75vh;
+  padding: 25px;
+  position: relative;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.img-wrapper h1 {
+  position: absolute;
+  right: 60vw;
+  top: 20vh;
+  color: white;
+  font-family: "Playfair Display";
+  font-size: 75px;
+}
+
+.img-wrapper h2 {
+  position: absolute;
+  font-family: "Playfair Display";
+  right: 70vw;
+  top: 40vh;
+  color: gray;
+}
+
+.hero-buttons {
+  position: absolute;
+  bottom: 20vh;
+  left: 10vw;
+  display: flex;
+  gap: 35px;
+}
+
+.img-wrapper button {
+  background-color: rgb(224, 82, 101);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.img-wrapper button:hover {
+  background-color: rgb(200, 60, 80);
+}
