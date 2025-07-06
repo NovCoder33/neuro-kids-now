@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 const Volunteer = () => {
   return (
     <div className="volunteer">

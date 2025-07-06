@@ -2,8 +2,6 @@ import "./Hero.css";
 import hero from "../assets/hero.png";
 import Program from "./Program";
 import Button from "./Button";
-import Footer from "./Footer";
-
 const PROGRAMS = [
   {
     name: "Hospital Resources",

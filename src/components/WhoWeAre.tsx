@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 const WhoWeAre = () => {
   return (
     <div className="who-we-are">
