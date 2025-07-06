@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(187, 89, 122);
+  height: 69px;
 }
 
 .navbar ul {
@@ -11,7 +12,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -31,4 +32,14 @@
 }
 .navbar a:hover {
   background-color: rgb(236, 117, 157);
+}
+.navbar img {
+  width: 200px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  position: relative;
+  left: 30px;
+  bottom: 22px;
 }

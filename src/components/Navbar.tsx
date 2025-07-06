@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -16,7 +17,7 @@ const Navbar = () => {
         <li>
           <Link to="./WhoWeAre">Who We Are</Link>
         </li>
-        <h1 style={{ color: "white" }}>Neuro kids now</h1>
+        <img src={logo} alt="logo-img" />
       </ul>
     </nav>
   );
