@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(187, 89, 122);
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  display: block;
+  text-align: center;
+}
+.footer a:hover {
+  color: rgb(236, 117, 157);
+  text-decoration: underline;
+}

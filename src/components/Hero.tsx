@@ -1,7 +1,8 @@
 import "./Hero.css";
 import hero from "../assets/hero.png";
 import Program from "./Program";
-import { useNavigate } from "react-router-dom";
+import Button from "./Button";
+import Footer from "./Footer";
 
 const PROGRAMS = [
   {
@@ -26,7 +27,6 @@ const PROGRAMS = [
   },
 ];
 const Hero = () => {
-  const navigate = useNavigate();
   return (
     <div className="hero-content">
       <div className="img-wrapper">
@@ -34,8 +34,8 @@ const Hero = () => {
         <h1>Neuro kids now</h1>
         <h2>Neurodiverse. Nutured. Now</h2>
         <div className="hero-buttons">
-          <button onClick={() => navigate("./Volunteer")}>Support</button>
-          <button onClick={() => navigate("./WhoWeAre")}> Learn More</button>
+          <Button location="Volunteer">Support</Button>
+          <Button location="WhoWeAre">Learn More</Button>
         </div>
       </div>
       <div className="about-us">

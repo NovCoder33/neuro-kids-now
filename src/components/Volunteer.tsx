@@ -1,5 +1,11 @@
+import Footer from "./Footer";
+
 const Volunteer = () => {
-  return <h1>VOLUNTEER</h1>;
+  return (
+    <div className="volunteer">
+      <h1>VOLUNTEER</h1>
+    </div>
+  );
 };
 
 export default Volunteer;

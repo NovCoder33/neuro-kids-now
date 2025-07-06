@@ -1,5 +1,10 @@
+import "./Programs.css";
 const Programs = () => {
-  return <h1>PROGRAMS</h1>;
+  return (
+    <div className="programs">
+      <h1>PROGRAMS</h1>
+    </div>
+  );
 };
 
 export default Programs;
