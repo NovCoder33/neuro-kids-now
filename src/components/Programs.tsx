@@ -1,8 +1,8 @@
 import "./Programs.css";
 import toyImage from "../assets/toybooks.png";
-import cardsCraft from "../assets/cardscrafts.png";
-import hospital from "../assets/hospitalpng.png";
-import interactions from "../assets/interactions.png";
+import cardsCraft from "../assets/cardscrafts.jpg";
+import hospital from "../assets/hospital.jpg";
+import interactions from "../assets/interactions.jpg";
 import carePackage from "../assets/snoopy.png";
 const Programs = () => {
   return (
