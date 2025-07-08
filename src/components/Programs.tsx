@@ -7,6 +7,7 @@ import carePackage from "../assets/snoopy.png";
 const Programs = () => {
   return (
     <div className="prgms">
+      <h1>Our Programs</h1>
       <div className="programTile">
         <div className="programText">
           <h1>Toys/Books Program</h1>
