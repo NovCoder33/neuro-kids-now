@@ -1,11 +1,22 @@
-.volunteer h1 {
+.header {
+  background-color: #ffe8ec;
+  width: 100vw;
+  height: 40vh;
+  gap: 0px;
+}
+.header h1 {
   font-size: 49px;
+  position: relative;
+  top: 20%;
   text-align: center;
+  margin-bottom: 20px; /* space between header and buttons */
 }
 .button {
+  position: absolute;
+  top: 35%;
+  left: 28%;
   display: flex;
-  justify-content: center;
-  gap: 8px;
+  gap: 35px;
 }
 .button button {
   background-color: rgb(224, 82, 101);
@@ -23,17 +34,22 @@
 }
 .description {
   display: flex;
-  flex-flow: row nowrap;
   gap: 20px;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: 20px;
 }
 .descItem {
   display: block;
-  background-color: hsl(330, 100%, 98%);
+  flex: 1;
+  padding: 20px;
+  background-color: #ffe8ec;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .description h1 {
   font-family: "Playfair Display";
   text-wrap: nowrap;
   color: rgb(224, 82, 101);
+  font-size: 39px;
 }
