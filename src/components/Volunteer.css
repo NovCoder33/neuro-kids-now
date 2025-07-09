@@ -1,0 +1,39 @@
+.volunteer h1 {
+  font-size: 49px;
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.button button {
+  background-color: rgb(224, 82, 101);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: rgb(200, 60, 80);
+}
+.description {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.descItem {
+  display: block;
+  background-color: hsl(330, 100%, 98%);
+}
+
+.description h1 {
+  font-family: "Playfair Display";
+  text-wrap: nowrap;
+  color: rgb(224, 82, 101);
+}
