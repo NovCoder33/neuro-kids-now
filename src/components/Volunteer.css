@@ -11,14 +11,14 @@
   text-align: center;
   margin-bottom: 20px; /* space between header and buttons */
 }
-.button {
+.v-button {
   position: absolute;
   top: 35%;
   left: 28%;
   display: flex;
   gap: 35px;
 }
-.button button {
+.v-button button {
   background-color: rgb(224, 82, 101);
   border-radius: 25px;
   border: none;
@@ -29,7 +29,7 @@
   transition: background-color 0.3s ease;
 }
 
-.button button:hover {
+.v-button button:hover {
   background-color: rgb(200, 60, 80);
 }
 .description {

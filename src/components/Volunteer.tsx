@@ -5,7 +5,7 @@ const Volunteer = () => {
     <div className="volunteer">
       <header className="header">
         <h1>Get Involved</h1>
-        <div className="button">
+        <div className="v-button">
           <button
             onClick={() =>
               window.open(

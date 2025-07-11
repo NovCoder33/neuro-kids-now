@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="about-us">
-        <h1>About Us</h1>
+        <h1>Our Mission</h1>
         <p>
           Neuro Kids Now is a youth led nonprofit that empowers kids with
           neurological conditions to embrace their childhood with confidence,
