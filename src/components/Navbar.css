@@ -1,20 +1,26 @@
 .navbar {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  max-width: 100%;
   background-color: #c04a76;
-  height: 69px;
+  max-height: 25%;
+  padding: 0%;
+  margin: 0%;
 }
 
+.navbar hr {
+  width: 100%;
+  height: 10%;
+  background: #fff;
+}
+
+.vertical {
+  border-left: 1px solid #fff;
+  height: auto;
+}
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
   flex-direction: row-reverse;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 .navbar a {
@@ -24,23 +30,18 @@
   display: block;
   text-align: center;
 }
-.navbar h1 {
+.navbar Link {
   text-wrap: balance;
-  font-family: "Playfair Display";
+  font-family: "Raleway";
   color: gray;
-  font-size: 20px;
-  position: relative;
+  font-size: 25px;
 }
 .navbar a:hover {
   background-color: rgb(255, 126, 169);
 }
 .navbar img {
-  width: 200px;
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: 90px;
-  position: relative;
-  bottom: 22px;
   cursor: pointer;
+  width: 15%;
+  height: 15%;
+  margin-right: 20%;
 }
