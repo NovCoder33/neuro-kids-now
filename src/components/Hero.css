@@ -78,7 +78,7 @@
   color: rgb(224, 82, 101);
 }
 
-.programs {
+.hero-programs {
   display: flex;
   flex-direction: row;
 }

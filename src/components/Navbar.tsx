@@ -7,32 +7,56 @@ const Navbar = () => {
     <nav className="navbar">
       <hr></hr>
       <ul>
+        <button
+          onClick={() => {
+            navigate("./Volunteer");
+          }}
+        >
+          Donate
+        </button>
+        <div className="vertical"></div>
+
         <li>
-          <Link style={{ fontFamily: "Raleway" }} to="./">
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./"
+          >
             CONTACT
           </Link>
         </li>
         <div className="vertical"></div>
         <li>
-          <Link style={{ fontFamily: "Raleway" }} to="./Volunteer">
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./Volunteer"
+          >
             GET INVOLVED
           </Link>
         </li>
         <div className="vertical"></div>
         <li>
-          <Link style={{ fontFamily: "Raleway" }} to="./WhoWeAre">
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./WhoWeAre"
+          >
             OUR IMPACT
           </Link>
         </li>
         <div className="vertical"></div>
         <li>
-          <Link style={{ fontFamily: "Raleway" }} to="./Programs">
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./Programs"
+          >
             PROGRAMS
           </Link>
         </li>
         <div className="vertical"></div>
         <li>
-          <Link style={{ fontFamily: "Raleway" }} to="./WhoWeAre">
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./WhoWeAre"
+          >
             ABOUT
           </Link>
         </li>

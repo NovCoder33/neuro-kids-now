@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
       <div className="our-programs">
         <h1>Our Programs</h1>
-        <div className="programs">
+        <div className="hero-programs">
           {PROGRAMS.map((program) => (
             <Program name={program.name} color={program.color} />
           ))}
