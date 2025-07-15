@@ -7,13 +7,14 @@ const Navbar = () => {
     <nav className="navbar">
       <hr></hr>
       <ul>
-        <button
-          onClick={() => {
-            navigate("./Volunteer");
-          }}
-        >
-          Donate
-        </button>
+        <li>
+          <Link
+            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
+            to="./volunteer"
+          >
+            DONATE
+          </Link>
+        </li>
         <div className="vertical"></div>
 
         <li>
