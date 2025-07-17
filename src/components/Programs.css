@@ -3,22 +3,24 @@
   flex-direction: column;
   align-items: center;
   gap: 0%;
+  margin: 10px;
 }
 
 .programs h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .programTile {
   border: 1px solid #491570;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #f7eefe;
-  width: 50em;
-  height: 25em;
+  width: 60em;
+  height: 70%;
   display: flex;
   align-items: row;
+  justify-content: space-between;
   margin-bottom: 1rem;
   padding: 2%;
 }
@@ -28,15 +30,24 @@
   flex-direction: column;
 }
 
+.programText h1,
+.programText p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
 .programText h1 {
   font-size: 49px;
   font-family: "Gabriela";
   text-wrap: nowrap;
+  margin-bottom: 25px;
 }
 
 .programText p {
   color: black;
-  font-size: 1em;
+  font-size: 17px;
+  line-height: 35px;
+  text-wrap: nowrap;
   font-family: "Raleway";
 }
 
@@ -44,9 +55,6 @@
   width: 20em;
   height: 20em;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
 .programTile:hover {

@@ -13,7 +13,7 @@
 }
 
 .img-wrapper img {
-  width: 100vw; /* 100% of the viewport width */
+  width: 100%;
   height: auto; /* keep aspect ratio */
   display: block;
   object-fit: cover;

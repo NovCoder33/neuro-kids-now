@@ -1,3 +1,8 @@
+.who-we-are {
+  width: 100%;
+  max-width: 1400px;
+}
+
 .who-we-are h1 {
   color: #641188;
   font-family: "Charm";
@@ -11,87 +16,96 @@
 
 .mission {
   display: flex;
-  justify-self: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  margin: 80px 10px 10px 10px;
 }
 
+.mission-text p,
+.mission-text h1 {
+  margin: 0px 0px 0px 125px;
+  padding: 0px;
+}
 .mission-text h1 {
   text-align: center;
-}
-
-.mission-text {
-  margin-left: 10%;
+  font-size: 50px;
+  margin-bottom: 2.5px;
 }
 
 .mission-text p {
-  text-wrap: pre;
+  text-wrap: nowrap;
   text-align: center;
+  font-size: 15px;
+  line-height: 35px;
 }
 .mission img {
-  margin-left: 25%;
-  margin-right: 5%;
+  width: 20rem;
   border-radius: 100%;
-  width: 25%;
-  height: 25%;
+  height: auto;
+  margin-right: 5%;
+  display: block;
 }
 
 .story-text {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .our-story {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
+  margin-bottom: 5%;
 }
 
 .story-img img {
-  width: 250%;
-  height: 200%;
-  margin-bottom: 15px;
+  width: 30rem;
+  height: 5rem;
+  height: auto;
+  margin-bottom: 5%;
 }
 
 .story-img {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-left: 10%;
   margin-right: 5%;
+  margin-top: 8%;
+}
+
+.story-text {
+  display: flex;
+  justify-content: space-around;
+}
+
+.story-text h1,
+.story-text p {
+  margin: 0;
+  padding: 0;
 }
 
 .story-text h1 {
   text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .story-text p {
   text-align: center;
   text-wrap: balance;
+  font-size: 15px;
+  line-height: 35px;
 }
 
-.wavy-line {
-  --s: 24px; /* size of the wave */
-  --b: 6px; /* thickness of the line */
-  --m: 0.4; /* curvature of the wave [0 2] */
-
-  background: #f6c33b;
-  --R: calc(var(--s) * sqrt(var(--m) * var(--m) + 1) + var(--b) / 2);
-  height: calc(1.5 * var(--R));
-  width: 100%;
-  --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
-  mask: radial-gradient(
-        var(--R) at left 50% bottom calc(-1 * var(--m) * var(--s)),
-        var(--_g)
-      )
-      calc(50% - 2 * var(--s)) calc(50% - var(--s) / 2 - var(--b) / 2) /
-      calc(4 * var(--s)) calc(var(--s) + var(--b)) repeat-x,
-    radial-gradient(
-        var(--R) at left 50% top calc(-1 * var(--m) * var(--s)),
-        var(--_g)
-      )
-      50% calc(50% + var(--s) / 2 + var(--b) / 2) / calc(4 * var(--s))
-      calc(var(--s) + var(--b)) repeat-x;
+.wave {
+  width: 125%;
+  height: 50px;
+  background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 50'%3E%3Cpath fill='none' stroke='goldenrod' stroke-width='4' d='M0,25 Q30,0 60,25 T120,25 T180,25 T240,25 T300,25 T360,25 T420,25 T480,25 T540,25 T600,25 T660,25 T720,25 T780,25 T840,25 T900,25 T960,25 T1020,25 T1080,25 T1140,25 T1200,25 T1260,25 T1320,25 T1380,25 T1440,25' /%3E%3C/svg%3E")
+    repeat-x center;
+  background-size: contain;
 }
