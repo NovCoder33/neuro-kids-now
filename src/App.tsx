@@ -5,6 +5,7 @@ import Volunteer from "./components/Volunteer";
 import WhoWeAre from "./components/WhoWeAre";
 import Programs from "./components/Programs";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import "./App.css";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Programs" element={<Programs />}></Route>
         <Route path="/Volunteer" element={<Volunteer />}></Route>
         <Route path="/WhoWeAre" element={<WhoWeAre />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </div>

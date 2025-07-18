@@ -20,7 +20,7 @@ const Navbar = () => {
         <li>
           <Link
             style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./"
+            to="./Contact"
           >
             CONTACT
           </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <li>
           <Link
             style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./Volunteer"
+            to="./volunteer"
           >
             GET INVOLVED
           </Link>
