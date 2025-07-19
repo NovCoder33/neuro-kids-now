@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <nav className="navbar">
+    <div className="navbar">
       <hr></hr>
       <ul>
         <li>
@@ -64,7 +64,7 @@ const Navbar = () => {
         <img onClick={() => navigate(`./`)} src={logo} alt="logo-img" />
       </ul>
       <hr></hr>
-    </nav>
+    </div>
   );
 };
 
