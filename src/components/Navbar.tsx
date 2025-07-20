@@ -1,70 +1,63 @@
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
 import "./Navbar.css";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
 const Navbar = () => {
-  const navigate = useNavigate();
-  return (
-    <div className="navbar">
-      <hr></hr>
-      <ul>
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./volunteer"
-          >
-            DONATE
-          </Link>
-        </li>
-        <div className="vertical"></div>
+  const nav = useNavigate();
+  const navClass = useRef<HTMLElement>(null);
 
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./Contact"
-          >
-            CONTACT
+  const showNavBar = () => {
+    console.log(navClass.current);
+    if (navClass.current) {
+      navClass.current.classList.toggle("responsive_nav");
+    }
+  };
+  return (
+    <>
+      <hr className="horz-top"></hr>
+
+      <header>
+        <img src={Logo} onClick={() => nav("./")}></img>
+        <nav ref={navClass}>
+          <Link onClick={() => showNavBar()} className="link" to="./WhoWeAre">
+            About
           </Link>
-        </li>
-        <div className="vertical"></div>
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./volunteer"
-          >
-            GET INVOLVED
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Programs">
+            Programs
           </Link>
-        </li>
-        <div className="vertical"></div>
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./WhoWeAre"
-          >
-            OUR IMPACT
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./WhoWeAre">
+            Our Impact
           </Link>
-        </li>
-        <div className="vertical"></div>
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./Programs"
-          >
-            PROGRAMS
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Volunteer">
+            Get Involved
           </Link>
-        </li>
-        <div className="vertical"></div>
-        <li>
-          <Link
-            style={{ fontFamily: "Montserrat", fontWeight: "bolder" }}
-            to="./WhoWeAre"
-          >
-            ABOUT
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Contact">
+            Contact
           </Link>
-        </li>
-        <img onClick={() => navigate(`./`)} src={logo} alt="logo-img" />
-      </ul>
-      <hr></hr>
-    </div>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Volunteer">
+            Donate
+          </Link>
+          <div className="vert"></div>
+          <button
+            onClick={() => showNavBar()}
+            className="nav-btn nav-close-btn"
+          >
+            <FaTimes />
+          </button>
+        </nav>
+        <button onClick={() => showNavBar()} className="nav-btn">
+          <FaBars />
+        </button>
+      </header>
+      <hr className="horz-bottom"></hr>
+    </>
   );
 };
 
