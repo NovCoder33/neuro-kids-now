@@ -9,14 +9,14 @@
 .programs h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: 90px;
+  font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
 }
 
 .programTile {
   border: 1px solid #491570;
-  border-radius: 5px;
+  border-radius: 1%;
   background-color: #f7eefe;
-  width: 60em;
+  width: 75vw;
   height: 70%;
   display: flex;
   align-items: row;
@@ -37,26 +37,38 @@
 }
 
 .programText h1 {
-  font-size: 49px;
+  font-size: clamp(0.9rem, 5vw + 1rem, 3rem);
   font-family: "Gabriela";
   text-wrap: nowrap;
-  margin-bottom: 25px;
+  margin-bottom: 5%;
 }
 
 .programText p {
   color: black;
-  font-size: 17px;
+  font-size: clamp(0.5rem, 1vw + 0.75rem, 1.25rem);
   line-height: 35px;
-  text-wrap: nowrap;
+  text-wrap: pretty;
   font-family: "Raleway";
 }
 
 .programTile img {
-  width: 20em;
-  height: 20em;
+  width: 25vw;
+  height: auto;
   border-radius: 8px;
 }
 
 .programTile:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .programTile {
+    flex-direction: column;
+  }
+  .programTile img {
+    width: 100%;
+  }
+  .programTile h1 {
+    text-wrap: pretty;
+  }
 }

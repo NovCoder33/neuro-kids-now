@@ -1,6 +1,6 @@
 .contact {
   width: 100%;
-  min-height: 100vh; /* fill at least the screen */
+  min-height: 100dvh; /* fill at least the screen */
   display: flex;
   align-items: center;
   justify-content: center;

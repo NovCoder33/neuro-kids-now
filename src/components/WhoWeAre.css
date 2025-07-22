@@ -6,20 +6,23 @@
 .who-we-are h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: 34px;
+  font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
 }
 
 .who-we-are p {
   color: black;
   font-family: "Raleway";
+  font-size: clamp(0.5rem, 1vw + 0.75rem, 1.25rem);
+  line-height: 5dvh;
+  text-wrap: pretty;
 }
 
 .mission {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 80px 10px 10px 10px;
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
 }
 
 .mission-text p,
@@ -27,22 +30,21 @@
   margin: 0px 0px 0px 125px;
   padding: 0px;
 }
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .mission-text h1 {
   text-align: center;
-  font-size: 50px;
   margin-bottom: 2.5px;
 }
 
-.mission-text p {
-  text-wrap: nowrap;
-  text-align: center;
-  font-size: 15px;
-  line-height: 35px;
-}
 .mission img {
-  width: 20rem;
+  width: 25%;
   border-radius: 100%;
   height: auto;
+  margin-left: 5%;
   margin-right: 5%;
   display: block;
 }
@@ -51,7 +53,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
 }
 
 .our-story {
@@ -59,28 +60,18 @@
   justify-content: center;
   flex-direction: row-reverse;
   margin-bottom: 5%;
+  gap: 5%;
+}
+.story-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .story-img img {
-  width: 30rem;
-  height: 5rem;
-  height: auto;
-  margin-bottom: 5%;
-}
-
-.story-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-right: 5%;
-  margin-top: 8%;
-}
-
-.story-text {
-  display: flex;
-  justify-content: space-around;
+  width: 25vw;
+  height: 50vh;
+  margin-left: 5%;
 }
 
 .story-text h1,
@@ -89,23 +80,50 @@
   padding: 0;
 }
 
-.story-text h1 {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-.story-text p {
-  text-align: center;
-  text-wrap: balance;
-  font-size: 15px;
-  line-height: 35px;
-}
-
 .wave {
   width: 125%;
   height: 50px;
   background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 50'%3E%3Cpath fill='none' stroke='goldenrod' stroke-width='4' d='M0,25 Q30,0 60,25 T120,25 T180,25 T240,25 T300,25 T360,25 T420,25 T480,25 T540,25 T600,25 T660,25 T720,25 T780,25 T840,25 T900,25 T960,25 T1020,25 T1080,25 T1140,25 T1200,25 T1260,25 T1320,25 T1380,25 T1440,25' /%3E%3C/svg%3E")
     repeat-x center;
   background-size: contain;
+}
+
+@media (max-width: 1024px) {
+  .mission {
+    flex-direction: column;
+  }
+  .mission img {
+    width: 40%;
+    height: auto;
+    margin: 5% 0 0 15%;
+  }
+  .our-story {
+    flex-direction: column;
+  }
+  .story-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .story-img img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+  }
+}
+@media (max-width: 400px) {
+  .story-img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .story-img img {
+    margin-top: 25px;
+    width: 85vw;
+    height: auto;
+    margin-right: 5%;
+  }
+  .mission {
+    margin-left: 0;
+  }
 }
