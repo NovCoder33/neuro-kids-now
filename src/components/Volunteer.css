@@ -1,54 +1,84 @@
-.header {
-  background-color: #ffe8ec;
-  height: 40dvh;
-  gap: 0px;
-}
-.header h1 {
-  font-size: 49px;
-  position: relative;
-  top: 20%;
-  text-align: center;
-  margin-bottom: 20px; /* space between header and buttons */
-}
-.v-button {
-  position: absolute;
-  top: 50%;
-  left: 28%;
+div .volunteer-hero {
+  background-color: #ffb6d1;
+  width: 100%;
+  height: auto;
   display: flex;
-  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+  margin-top: 5%;
 }
-.v-button button {
+
+div .volunteer-hero-content {
+  width: 100%;
+  background-color: #fbcbdd;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.volunteer-hero-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.5%;
+  margin-bottom: 2.5%;
+}
+
+.volunteer-hero-card img {
+  width: 75%;
+  height: auto;
+  margin-bottom: 7.5%;
+}
+
+.volunteer-hero h1 {
+  color: #641188;
+  font-family: "Charm";
+  font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
+}
+
+.volunteer-hero-card button {
   background-color: rgb(224, 82, 101);
-  border-radius: 25px;
+  border-radius: clamp(1.8rem, 7vw + 1rem, 5rem);
   border: none;
   color: white;
-  padding: 15px 32px;
-  font-size: 16px;
+  padding: 2.5% 5%;
+  font-size: clamp(0.25rem, 1vw + 0.45rem, 1rem);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.v-button button:hover {
-  background-color: rgb(200, 60, 80);
-}
-.description {
+.volunteer-content {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.descItem {
-  display: block;
-  flex: 1;
-  padding: 20px;
-  background-color: #ffe8ec;
-  text-align: center;
-  border-radius: 8px;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.description h1 {
-  font-family: "Playfair Display";
-  text-wrap: nowrap;
-  color: rgb(224, 82, 101);
-  font-size: 39px;
+.volunteer-content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbcbdd;
+  margin-top: 3.5%;
+  margin-bottom: 2.5%;
+  width: 30%;
+  height: 75dvh;
+}
+
+.volunteer-content-card h1 {
+  text-align: center;
+  color: #641188;
+  font-family: "Charm";
+  font-size: clamp(0.9rem, 4vw + 0.65rem, 3.75rem);
+}
+
+.volunteer-content-card p {
+  text-align: center;
+  color: black;
+  font-family: "Raleway";
+  font-size: clamp(0.25rem, 1vw + 0.55rem, 1rem);
+  line-height: 2.5rem;
+  text-wrap: pretty;
 }

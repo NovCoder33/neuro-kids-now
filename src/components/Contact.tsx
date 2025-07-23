@@ -28,10 +28,10 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <h1 className="v-header">Contact</h1>
+    <div className="contact">
+      <div className="contact-card">
+        <h1>Contact</h1>
 
-      <div className="contact">
         <form onSubmit={onSubmit}>
           <div className="box">
             <label>Name</label>
@@ -41,13 +41,12 @@ const Contact = () => {
             <label>Message</label>
             <textarea name="message" required></textarea>
           </div>
-          <div className="box">
-            <button type="submit">Submit Form</button>
-          </div>
         </form>
+        <button type="submit">Submit Form</button>
+
         <span>{result}</span>
       </div>
-    </>
+    </div>
   );
 };
 export default Contact;
