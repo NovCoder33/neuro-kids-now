@@ -1,7 +1,5 @@
 import "./Hero.css";
-import hero from "../assets/hero.png";
-import Program from "./Program";
-import Button from "./Button";
+
 const PROGRAMS = [
   {
     name: "Hospital Resources",
@@ -26,32 +24,18 @@ const PROGRAMS = [
 ];
 const Hero = () => {
   return (
-    <div className="hero-content">
-      <div className="img-wrapper">
-        <img src={hero} alt="hero-image" />
-        <h1>Neuro kids now</h1>
-        <h2>Neurodiverse. Nutured. Now</h2>
-        <div className="hero-buttons">
-          <Button location="Volunteer">Support</Button>
-          <Button location="WhoWeAre">Learn More</Button>
+    <div className="home">
+      <div className="hero">
+        <div className="hero-content">
+          <h1>Neuro Kids Now</h1>
+          <p>Neurodiverse. Nurtured. Now.</p>
+          <div className="hero-buttons">
+            <button> Support </button>
+            <button> Learn More </button>
+          </div>
         </div>
       </div>
-      <div className="about-us">
-        <h1>Our Mission</h1>
-        <p>
-          Neuro Kids Now is a youth led nonprofit that empowers kids with
-          neurological conditions to embrace their childhood with confidence,
-          creativity, and joy 💛💜🧠
-        </p>
-      </div>
-      <div className="our-programs">
-        <h1>Our Programs</h1>
-        <div className="hero-programs">
-          {PROGRAMS.map((program) => (
-            <Program name={program.name} color={program.color} />
-          ))}
-        </div>
-      </div>
+      <p></p>
     </div>
   );
 };

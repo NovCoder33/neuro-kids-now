@@ -7,6 +7,7 @@ import Programs from "./components/Programs";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import "./App.css";
+import Donate from "./components/Donate";
 function App() {
   return (
     <div className="app">
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Volunteer" element={<Volunteer />}></Route>
         <Route path="/WhoWeAre" element={<WhoWeAre />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/Donate" element={<Donate />}></Route>
       </Routes>
       <Footer />
     </div>

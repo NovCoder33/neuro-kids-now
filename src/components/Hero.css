@@ -1,87 +1,55 @@
+.home {
+  width: 100vw;
+  height: 100%;
+}
+.hero {
+  width: 100%;
+  height: 75dvh;
+  background-image: url("../assets/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-content {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.img-wrapper {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 25px;
-  position: relative;
-}
-
-.img-wrapper img {
-  width: 100%;
-  height: auto; /* keep aspect ratio */
-  display: block;
-  object-fit: cover;
-}
-
-.img-wrapper h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero-content h1 {
+  font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
   color: white;
-  font-family: "Playfair Display";
-  font-size: 75px;
+  margin: 0 0 0 0;
 }
 
-.img-wrapper h2 {
-  font-family: "Playfair Display";
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(227, 227, 227);
+.hero-content p {
+  font-size: clamp(1.2rem, 7vw + 0.9rem, 1.5rem);
+  color: rgb(239, 239, 239);
+  font-weight: bold;
 }
-
 .hero-buttons {
-  position: absolute;
-  top: 80%;
-  left: 40%;
-  display: flex;
-  gap: 35px;
-}
-
-.about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-us h1 {
-  font-family: "Playfair Display";
-  text-wrap: nowrap;
-  color: rgb(224, 82, 101);
-}
-
-.about-us p {
-  text-wrap: balance;
-  font-family: "Playfair Display";
-  color: gray;
-  font-size: 20px;
-  margin-top: -10px;
-}
-
-.our-programs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.our-programs h1 {
-  font-family: "Playfair Display";
-  text-wrap: nowrap;
-  color: rgb(224, 82, 101);
-}
-
-.hero-programs {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-* {
-  color: rgb(248, 134, 149);
+
+.hero-buttons button {
+  background-color: rgb(224, 82, 101);
+  border-radius: clamp(1.8rem, 7vw + 1rem, 5rem);
+  border: none;
+  color: white;
+  padding: 10% 25% 10% 25%;
+  margin-right: 10%;
+  font-size: clamp(0.25rem, 1vw + 0.45rem, 1rem);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-wrap: nowrap;
+}
+
+.hero-buttons button:hover {
+  background-color: rgb(200, 60, 80);
 }

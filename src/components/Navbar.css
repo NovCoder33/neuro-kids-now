@@ -65,6 +65,7 @@ nav {
   display: flex;
   opacity: 1;
   align-items: center;
+  z-index: 99999;
 }
 
 @media (max-width: 1024px) {

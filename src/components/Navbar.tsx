@@ -41,8 +41,8 @@ const Navbar = () => {
             Contact
           </Link>
           <div className="vert"></div>
-          <Link onClick={() => showNavBar()} className="link" to="./Volunteer">
-            Donate
+          <Link onClick={() => showNavBar()} className="link" to="./Donate">
+            DONATE
           </Link>
           <div className="vert"></div>
           <button
