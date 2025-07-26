@@ -1,4 +1,5 @@
 import "./Hero.css";
+import Program from "./Program";
 
 const PROGRAMS = [
   {
@@ -35,7 +36,21 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <p></p>
+
+      <div className="home-content">
+        <h1>Our Mission</h1>
+        <p>
+          Neuro Kids Now is a youth led nonprofit that empowers kids with
+          neurological conditions to embrace their childhood with confidence,
+          creativity, and joy 💛💜🧠
+        </p>
+        <h1>Our Programs</h1>
+        <div className="programs-bar">
+          {PROGRAMS.map((program) => (
+            <Program name={program.name} color={program.color} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,13 @@
 .program:hover {
   filter: brightness(80%);
 }
+.program {
+  display: flex;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.program h1 {
+  text-align: center;
+}
