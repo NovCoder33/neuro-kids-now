@@ -37,7 +37,7 @@ hr.horz-bottom {
   height: 1.5px;
   background-color: white;
   position: absolute;
-  bottom: 85%;
+  top: 15%;
   border: none;
 }
 

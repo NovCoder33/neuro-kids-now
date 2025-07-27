@@ -36,7 +36,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <div className="home-content">
         <h1>Our Mission</h1>
         <p>
