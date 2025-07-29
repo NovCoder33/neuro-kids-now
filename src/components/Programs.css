@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   gap: 0%;
-  margin: 10px;
+  margin: 5% 0 7.5% 0;
 }
 
 .programs h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
+  font-size: clamp(5vw, 7.5vw + 1rem, 9vw);
+  margin: 0 0 5% 0;
 }
 
 .programTile {
@@ -37,7 +38,7 @@
 }
 
 .programText h1 {
-  font-size: clamp(0.9rem, 5vw + 1rem, 3rem);
+  font-size: clamp(2.5vw, 3.5vw, 4.5vw);
   font-family: "Gabriela";
   text-wrap: nowrap;
   margin-bottom: 5%;
@@ -45,8 +46,8 @@
 
 .programText p {
   color: black;
-  font-size: clamp(0.5rem, 1vw + 0.75rem, 1.25rem);
-  line-height: 35px;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
+  line-height: clamp(1rem, 1.5vw, 2.5rem);
   text-wrap: pretty;
   font-family: "Raleway";
 }
@@ -67,8 +68,29 @@
   }
   .programTile img {
     width: 100%;
+    height: auto;
   }
   .programTile h1 {
     text-wrap: pretty;
+  }
+}
+@media (min-width: 768px) {
+  .programTile {
+    flex-direction: column;
+  }
+  .programTile img {
+    width: 100%;
+  }
+  .programTile h1 {
+    text-wrap: pretty;
+  }
+  .programText h1 {
+    font-size: clamp(2.5vw, 3.5vw, 4.5vw);
+  }
+
+  .programText p {
+    color: black;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    line-height: clamp(1.5rem, 2vw, 2.5rem);
   }
 }

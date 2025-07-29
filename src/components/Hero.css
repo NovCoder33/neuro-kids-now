@@ -63,12 +63,13 @@
 .home-content h1 {
   font-size: clamp(1.5vw, 7vw + 1rem, 3vw);
   color: rgb(224, 82, 101);
+  margin: 2.5% 0 0 0;
 }
 
 .home-content p {
   font-size: clamp(0.75vw, 7vw + 0.9rem, 1.2vw);
   color: gray;
-  margin: 0 0 2% 0;
+  margin: 2.5% 0 0 0;
 }
 
 .programs-bar {
@@ -80,7 +81,7 @@
   font-size: clamp(1vw, 7vw + 1rem, 2vw);
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .hero {
     position: relative;
     width: 100%;

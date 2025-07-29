@@ -46,7 +46,6 @@ const WhoWeAre = () => {
             something heavy.
           </p>
           <p> So she decided to build it.</p>
-          <br />
           <p>
             Neuro Kids Now started as a small passion project — a few donated
             toys, a book drive, and a dream to give neurodivergent kids the
