@@ -1,28 +1,91 @@
 .footer {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(187, 89, 122);
+  height: 35vh;
+  border-top: 10px solid #641188;
 }
-
-.footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.footer-content {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  flex-direction: row;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: center;
 }
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  padding: 25px;
+.footer-content img {
+  max-width: 15%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: block;
-  text-align: center;
 }
-.footer a:hover {
-  color: rgb(236, 117, 157);
-  text-decoration: underline;
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-text p {
+  font-family: "Raleway";
+  text-align: center;
+  margin: 2.5% 0 0 0;
+}
+.footer-text-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: clamp(0.5vw, 0.75vw, 1vw);
+}
+.footer-text-links a {
+  color: black;
+  font-family: "Raleway";
+}
+.image-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 0;
+}
+.image-link img {
+  max-width: 25%;
+  height: auto;
+  object-fit: contain;
+}
+.image-link p {
+  font-family: "Raleway";
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.links ul {
+  list-style-type: none;
+}
+.links li {
+  margin-bottom: 15%;
+}
+.link {
+  color: black;
+  font-family: "Raleway";
+  font-size: clamp(1rem, 1.25vw, 1.5vw);
+}
+@media (max-width: 480px) {
+  .image-link img {
+    width: 100%;
+  }
+  .footer-content img {
+    width: 25vw;
+    height: 25vh;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25%;
+  }
 }

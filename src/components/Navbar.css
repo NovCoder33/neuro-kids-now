@@ -37,7 +37,7 @@ hr.horz-bottom {
   height: 1.5px;
   background-color: white;
   position: absolute;
-  top: 15%;
+  top: 20%;
   border: none;
 }
 
@@ -68,7 +68,7 @@ nav {
   z-index: 99999;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   header .nav-btn {
     display: visible;
     opacity: 1;

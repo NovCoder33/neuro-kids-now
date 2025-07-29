@@ -1,47 +1,73 @@
+import logo from "../assets/aboutlogo.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <ul>
-        <li>
-          <a
-            href="https://docs.google.com/forms/d/1hHw6GMFzMKns828143kUZ4J36J9rAR6TN7Z8nqKhze8/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Become a Volunteer
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://docs.google.com/forms/d/1JdMGGFqd6vru-175CdLMwohuPDl1yGdlpmySoJONhnw/edit#response=ACYDBNgarqa6BY6YDonmy1QSm_D2OFGg_hI0c2-F8RqXhSfrmCIvBSYs-va_MVX1ITVLeQw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Start a Chapter
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfYHZke8QmIHSF6lBscPLU6fktXU7c9I1CpuikKabM8WLohww/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join our Leadership Team
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://gofund.me/269c775d"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Support our Gofundme
-          </a>
-        </li>
-      </ul>
-    </footer>
+    <div className="footer">
+      <div className="footer-content">
+        <img src={logo}></img>
+        <div className="footer-text">
+          <p>© 2025 Neuro Kids Now. All rights reserved.</p>
+          <p>Neuro Kids Now is a 501(c)(3) non-profit organization.</p>
+          <p>EIN #33-2156147</p>
+          <div className="footer-text-links">
+            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+              FAQ
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+        <div className="image-link">
+          <img src={instagram}></img>
+          <img src={facebook}></img>
+          <p>Follow Us</p>
+        </div>
+        <div className="links">
+          <ul>
+            <li>
+              <Link className="link" to="./WhoWeare">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="./Programs">
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="./WhoWeAre">
+                Our Impact
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="./Volunteer">
+                Get Involved
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="./Contact">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="./Donate">
+                Donate
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
 
