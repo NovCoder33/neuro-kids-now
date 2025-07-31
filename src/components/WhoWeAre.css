@@ -7,7 +7,7 @@
 .who-we-are h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: clamp(5vw, 7.5vw + 1rem, 9vw);
+  font-size: clamp(4vw, 7.5vw + 1rem, 5vw);
   text-wrap: nowrap;
 }
 

@@ -15,58 +15,49 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="navbar">
+    <>
+      <hr className="horz-top"></hr>
+
       <header>
-        <div className="horz-top"></div>
-        <div className="nav-content">
-          <img src={Logo} onClick={() => nav("./")}></img>
-          <nav ref={navClass}>
-            <Link onClick={() => showNavBar()} className="link" to="./WhoWeAre">
-              About
-            </Link>
-            <div className="vert"></div>
-            <Link onClick={() => showNavBar()} className="link" to="./Programs">
-              Programs
-            </Link>
-            <div className="vert"></div>
-            <Link
-              onClick={() => showNavBar()}
-              className="link"
-              to="./OurImpact"
-            >
-              Our Impact
-            </Link>
-            <div className="vert"></div>
-            <Link
-              onClick={() => showNavBar()}
-              className="link"
-              to="./Volunteer"
-            >
-              Get Involved
-            </Link>
-            <div className="vert"></div>
-            <Link onClick={() => showNavBar()} className="link" to="./Contact">
-              Contact
-            </Link>
-            <div className="vert"></div>
-            <Link onClick={() => showNavBar()} className="link" to="./Donate">
-              DONATE
-            </Link>
-            <div className="vert"></div>
-            <button
-              onClick={() => showNavBar()}
-              className="nav-btn nav-close-btn"
-            >
-              <FaTimes />
-            </button>
-          </nav>
-          <button onClick={() => showNavBar()} className="nav-btn">
-            <FaBars />
+        <img src={Logo} onClick={() => nav("./")}></img>
+        <nav ref={navClass}>
+          <Link onClick={() => showNavBar()} className="link" to="./WhoWeAre">
+            About
+          </Link>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Programs">
+            Programs
+          </Link>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./OurImpact">
+            Our Impact
+          </Link>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Volunteer">
+            Get Involved
+          </Link>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Contact">
+            Contact
+          </Link>
+          <div className="vert"></div>
+          <Link onClick={() => showNavBar()} className="link" to="./Donate">
+            Donate
+          </Link>
+          <div className="vert"></div>
+          <button
+            onClick={() => showNavBar()}
+            className="nav-btn nav-close-btn"
+          >
+            <FaTimes />
           </button>
-        </div>
-        <div className="horz-bottom"></div>
+        </nav>
+        <button onClick={() => showNavBar()} className="nav-btn">
+          <FaBars />
+        </button>
       </header>
-    </div>
+      <hr className="horz-bottom"></hr>
+    </>
   );
 };
 

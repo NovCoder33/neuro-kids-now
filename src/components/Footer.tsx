@@ -1,74 +1,63 @@
 import logo from "../assets/aboutlogo.png";
-import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
 import { Link } from "react-router-dom";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-
+import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
+      <hr></hr>
       <div className="footer-content">
         <img src={logo}></img>
+
         <div className="footer-text">
-          <p>© 2025 Neuro Kids Now. All rights reserved.</p>
-          <p>Neuro Kids Now is a 501(c)(3) non-profit organization.</p>
+          <p>© 2025 Neuro Kids Now. All rights reserved. </p>
+          <p>Neuro Kids Now is a 501(c)(3) non-profit organization. </p>
           <p>EIN #33-2156147</p>
           <div className="footer-text-links">
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Privacy Policy
             </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               FAQ
             </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.minecraft.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Terms & Conditions
             </a>
           </div>
         </div>
-        <div className="image-link">
-          <img src={instagram}></img>
-          <img src={facebook}></img>
-          <p>Follow Us</p>
+        <div className="footer-fancy-links">
+          <a href="https://www.instagram.com">
+            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+          </a>
+          <a href="https://www.facebook.com">
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+          </a>
+          <p>Follow us</p>
         </div>
-        <div className="links">
-          <ul>
-            <li>
-              <Link className="link" to="./WhoWeare">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="./Programs">
-                Programs
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="./WhoWeAre">
-                Our Impact
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="./Volunteer">
-                Get Involved
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="./Contact">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="./Donate">
-                Donate
-              </Link>
-            </li>
-          </ul>
+        <div className="footer-links">
+          <Link to="./WhoWeAre">About</Link>
+          <Link to="./Programs">Programs</Link>
+          <Link to="./OurImpact">Our Impact</Link>
+          <Link to="./Volunteer">Get Involved</Link>
+          <Link to="./Contact">Contact</Link>
+          <Link to="./Donate">Donate</Link>
         </div>
       </div>
     </div>
   );
 };
-
 export default Footer;

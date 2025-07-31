@@ -1,27 +1,16 @@
 header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
+  padding: 1rem 2rem;
   background-color: #c04a76;
-  padding: 1.15dvh;
   color: #ffffff;
-  font-size: 8px;
-  margin: 0 0 0 0;
 }
 
 header img {
   width: 10%;
-  height: auto;
-  height: 15dvh;
-  padding: 0 0 0 0;
-}
-.nav-content {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  height: 90%;
 }
 
 nav .link {
@@ -31,22 +20,25 @@ nav .link {
   font-family: "Raleway";
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.45rem;
-  text-wrap: nowrap;
+  font-size: 0.75rem;
 }
 
-.horz-top {
+hr.horz-top {
   width: 100%;
-  border-top: 1px solid #ffffff;
-  height: 2px;
-  margin: 0 0 0 0;
+  height: 1.5px;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  border: none;
 }
 
-.horz-bottom {
+hr.horz-bottom {
   width: 100%;
-  border-bottom: 1px solid #ffffff;
-  height: 2px;
-  margin: 0 0 0 0;
+  height: 1.5px;
+  background-color: white;
+  position: absolute;
+  bottom: 85%;
+  border: none;
 }
 
 nav .vert {
@@ -64,6 +56,7 @@ header .nav-btn {
   background: transparent;
   border: none;
   outline: none;
+  display: hidden;
   opacity: 0;
   font-size: 1.8rem;
 }
@@ -71,9 +64,7 @@ header .nav-btn {
 header div,
 nav {
   display: flex;
-  opacity: 1;
   align-items: center;
-  z-index: 99999;
 }
 
 @media (max-width: 992px) {
@@ -84,7 +75,7 @@ nav {
 
   header nav {
     position: fixed;
-    top: -100dvh;
+    top: -100vh;
     left: 0;
     height: 100%;
     width: 100%;
@@ -98,11 +89,12 @@ nav {
   }
 
   header img {
-    width: 25%;
-    height: auto;
+    margin-left: 10%;
+    width: 40%;
+    height: 90%;
   }
   header .responsive_nav {
-    transform: translateY(100dvh);
+    transform: translateY(100vh);
   }
 
   nav .nav-close-btn {

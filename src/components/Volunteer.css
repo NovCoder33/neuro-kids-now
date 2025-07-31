@@ -84,3 +84,10 @@ div .volunteer-hero-content {
   line-height: 2.5rem;
   text-wrap: pretty;
 }
+
+@media (max-width: 992px) {
+  .volunteer-content-card p {
+    font-size: clamp(0.15rem, 1vw + 0.45rem, 0.9rem);
+    line-height: 1rem;
+  }
+}

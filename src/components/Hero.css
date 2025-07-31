@@ -81,7 +81,7 @@
   font-size: clamp(1vw, 7vw + 1rem, 2vw);
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .hero {
     position: relative;
     width: 100%;
