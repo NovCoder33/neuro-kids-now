@@ -15,9 +15,8 @@ const Navbar = () => {
     }
   };
   return (
-    <>
+    <div className="full-header">
       <hr className="horz-top"></hr>
-
       <header>
         <img src={Logo} onClick={() => nav("./")}></img>
         <nav ref={navClass}>
@@ -57,7 +56,7 @@ const Navbar = () => {
         </button>
       </header>
       <hr className="horz-bottom"></hr>
-    </>
+    </div>
   );
 };
 

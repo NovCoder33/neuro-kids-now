@@ -1,6 +1,6 @@
 .footer hr {
-  border: 10px solid #641188;
-  margin-bottom: 10%;
+  border: 5px solid #641188;
+  margin-bottom: 2%;
 }
 .footer-content {
   width: 100%;
@@ -24,7 +24,7 @@
   text-wrap: nowrap;
   text-align: center;
   color: black;
-  font-size: clamp(1.5vw, 2vw, 3vw);
+  font-size: clamp(0.5vw, 1vw, 2vw);
 }
 .footer-text-links {
   display: flex;
@@ -35,21 +35,21 @@
 .footer-text-links a {
   font-family: "Raleway";
   color: black;
-  font-size: clamp(1.5vw, 2vw, 3vw);
+  font-size: clamp(0.5vw, 1vw, 2vw);
 }
 .footer-fancy-links {
   display: flex;
   flex-direction: column;
 }
 .footer-fancy-links a {
-  font-size: clamp(7vw, 8vw + 1rem, 10vw);
+  font-size: clamp(4vw, 4vw + 1rem, 6vw);
   color: black;
 }
 .footer-fancy-links p {
   text-wrap: nowrap;
   text-align: center;
   font-family: "Raleway";
-  font-size: clamp(1.5vw, 2vw, 3vw);
+  font-size: clamp(0.5vw, 1vw, 2vw);
 }
 .footer-links {
   display: flex;
@@ -59,13 +59,27 @@
 .footer-links a {
   font-family: "Raleway";
   color: black;
-  font-size: clamp(1.5vw, 2vw, 3vw);
+  font-size: clamp(0.5vw, 1vw, 2vw);
 }
 @media (max-width: 992px) {
   .footer {
     border-top: 10px solid #641188;
+    margin: 0%;
   }
-  .footer hr {
-    margin-bottom: 0%;
+
+  .footer-links a {
+    font-size: clamp(1.5vw, 2vw, 3vw);
+  }
+  .footer-fancy-links p {
+    font-size: clamp(1.5vw, 2vw, 3vw);
+  }
+  .footer-fancy-links a {
+    font-size: clamp(7vw, 8vw + 1rem, 10vw);
+  }
+  .footer-text-links a {
+    font-size: clamp(1.5vw, 2vw, 3vw);
+  }
+  .footer-text p {
+    font-size: clamp(1.5vw, 2vw, 3vw);
   }
 }
