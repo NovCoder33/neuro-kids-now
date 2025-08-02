@@ -102,7 +102,7 @@
   .mission img {
     width: 40%;
     height: auto;
-    margin: 5% 0 0 15%;
+    margin: 5% 0% 0 0;
   }
   .our-story {
     flex-direction: column;
