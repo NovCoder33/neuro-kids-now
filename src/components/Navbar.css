@@ -101,6 +101,7 @@ nav {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    color: white;
   }
 
   nav .link {
@@ -117,6 +118,7 @@ nav {
   header .nav-btn {
     display: visible;
     opacity: 1;
+    color: white;
   }
 
   header nav {
