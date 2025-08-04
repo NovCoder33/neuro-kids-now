@@ -1,10 +1,10 @@
 .home {
   width: 100vw;
-  height: 100%;
+  height: auto;
 }
 .hero {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   background-image: url("../assets/hero.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -21,7 +21,7 @@
 
 .hero-content h1 {
   font-size: clamp(1.8vw, 1vw + 3.5rem, 5vw);
-  color: white;
+  color: black;
   margin: 0 0 0 0;
 }
 
@@ -75,13 +75,25 @@
 .programs-bar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .programs-bar h1 {
   font-size: clamp(1vw, 7vw + 1rem, 2vw);
 }
-
-@media (max-width: 992px) {
+@media only screen and (max-width: 900px) {
+}
+@media (max-device-width: 820px),
+  (max-device-width: 1024px) and (max-device-height: 1366px),
+  (max-device-width: 920px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero-content h1 {
+    color: white;
+  }
+}
+@media (max-width: 700px) {
   .hero {
     position: relative;
     width: 100%;

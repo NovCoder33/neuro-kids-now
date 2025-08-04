@@ -23,6 +23,7 @@ const PROGRAMS = [
     color: "rgb(248, 134, 195)",
   },
 ];
+console.log(window.innerWidth);
 const Hero = () => {
   return (
     <div className="home">

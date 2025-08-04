@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #c04a76;
   height: 80px;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -11,12 +12,13 @@ header {
   display: flex;
   justify-content: space-around;
   color: #ffffff;
+  align-items: center;
 }
 
 header img {
   margin: 0 0 0 0;
   width: 10%;
-  height: 90%;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -32,10 +34,15 @@ nav .link {
 .horz-top {
   width: 100%;
   border-top: 1px solid #ffff;
+  position: absolute;
+  top: 0%;
 }
 .horz-bottom {
   width: 100%;
   border-top: 1px solid #ffff;
+  z-index: 999;
+  position: absolute;
+  top: 10.5%;
 }
 
 nav .vert {

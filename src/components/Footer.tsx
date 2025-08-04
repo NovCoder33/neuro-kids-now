@@ -40,10 +40,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-fancy-links">
-          <a href="https://www.instagram.com">
+          <a href="https://www.instagram.com/neurokidsnow_">
             <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
           </a>
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/profile.php?id=61578082553756">
             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
           </a>
           <p>Follow us</p>
