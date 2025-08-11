@@ -1,96 +1,62 @@
-.programs {
+.program-hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0%;
-  margin: 5% 0 7.5% 0;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 33%;
+  background-color: #f7effc;
+  border-top: 4px solid #958e95;
+  border-bottom: 4px solid #958e95;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
-
 .programs h1 {
   color: #641188;
   font-family: "Charm";
-  font-size: clamp(5vw, 7.5vw + 1rem, 9vw);
-  margin: 0 0 5% 0;
+  text-align: center;
+  font-size: clamp(3vw, 5.5vw + 1rem, 7vw);
+  margin: 5% 0 5% 0;
 }
-
-.programTile {
-  border: 1px solid #491570;
-  border-radius: 1%;
-  background-color: #f7eefe;
-  width: 75vw;
-  height: 70%;
-  display: flex;
-  align-items: row;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  padding: 2%;
-}
-
-.programText {
+.program-sec {
+  margin-top: 5%;
+  width: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
-.programText h1,
-.programText p {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-
-.programText h1 {
-  font-size: clamp(2.5vw, 3.5vw, 4.5vw);
-  font-family: "Gabriela";
-  text-wrap: nowrap;
-  margin-bottom: 5%;
-}
-
-.programText p {
-  color: black;
-  font-size: clamp(0.5rem, 1vw, 1.5rem);
-  line-height: clamp(1rem, 1.5vw, 2.5rem);
-  text-wrap: pretty;
+.program-sec button {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #641188;
+  border: none;
+  border-radius: 15px;
   font-family: "Raleway";
+  color: white;
+  font-size: clamp(0.25vw, 1vw + 0.45rem, 1vw);
+  text-wrap: nowrap;
 }
-
-.programTile img {
-  width: 25vw;
-  height: auto;
-  border-radius: 8px;
+.gold-body-programs {
+  background-color: #ffdd79;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  border-top: 4px solid #958e95;
+  border-bottom: 4px solid #958e95;
 }
-
-.programTile:hover {
-  transform: translateY(-2px);
-}
-
-@media (max-width: 992px) {
-  .programTile {
-    flex-direction: column;
-  }
-  .programTile img {
-    width: 100%;
-    height: auto;
-  }
-  .programTile h1 {
-    text-wrap: pretty;
-  }
-}
-@media (max-width: 768px) {
-  .programTile {
-    flex-direction: column;
-  }
-  .programTile img {
-    width: 100%;
-  }
-  .programTile h1 {
-    text-wrap: pretty;
-  }
-  .programText h1 {
-    font-size: clamp(2.5vw, 3.5vw, 4.5vw);
-  }
-
-  .programText p {
-    color: black;
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    line-height: clamp(1.5rem, 2vw, 2.5rem);
-  }
+.gold-body-programs p {
+  margin-top: 2%;
+  color: #641188;
+  text-align: center;
+  text-wrap: pretty;
+  font-weight: bolder;
+  font-family: "Raleway";
+  line-height: 150%;
+  font-size: clamp(0.75vw, 7vw + 0.9rem, 1.2vw);
+  max-width: 90ch;
+  margin-bottom: 2%;
 }

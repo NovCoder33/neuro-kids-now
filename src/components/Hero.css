@@ -21,7 +21,7 @@
 
 .hero-content h1 {
   font-size: clamp(1.8vw, 1vw + 3.5rem, 5vw);
-  color: black;
+  color: white;
   margin: 0 0 0 0;
 }
 
