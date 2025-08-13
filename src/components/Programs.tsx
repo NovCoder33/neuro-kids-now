@@ -1,8 +1,8 @@
 import "./Programs.css";
-import img1 from "../assets/img.png";
-import img2 from "../assets/img2.png";
-import img3 from "../assets/img4.png";
-import img4 from "../assets/img5.png";
+import img1 from "../assets/programimg.jpg";
+import img2 from "../assets/programimg2.jpg";
+import img3 from "../assets/programimg3.jpg";
+import img4 from "../assets/programimg4.jpg";
 import img5 from "../assets/hospital.jpg";
 
 const Programs = () => {
@@ -16,7 +16,7 @@ const Programs = () => {
         </div>
         <div className="program-sec">
           <button>Cards/Crafts</button>
-          <img src={img2}></img>
+          <img src={img4}></img>
         </div>
         <div className="program-sec">
           <button>Care Packages</button>
@@ -24,7 +24,7 @@ const Programs = () => {
         </div>
         <div className="program-sec">
           <button>Patient Pen Pal</button>
-          <img src={img4}></img>
+          <img src={img2}></img>
         </div>
         <div className="program-sec">
           <button>Hospital Recources</button>

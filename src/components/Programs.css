@@ -60,3 +60,31 @@
   max-width: 90ch;
   margin-bottom: 2%;
 }
+@media (min-device-width: 800px) and (max-device-width: 900px) {
+  .program-hero {
+    flex-direction: column;
+  }
+  .program-sec button {
+    font-size: clamp(1.05rem, 1vw + 0.25rem, 1.55rem);
+  }
+  .programs h1 {
+    font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
+  }
+  .gold-body-programs p {
+    font-size: clamp(1.5rem, 1.5vw + 1.25rem, 5rem);
+  }
+}
+@media (max-width: 992px) {
+  .program-hero {
+    flex-direction: column;
+  }
+  .program-sec button {
+    font-size: clamp(1.05rem, 1vw + 0.25rem, 1.55rem);
+  }
+  .programs h1 {
+    font-size: clamp(1.8rem, 7vw + 1rem, 5rem);
+  }
+  .gold-body-programs p {
+    font-size: clamp(1rem, 1vw + 0.75rem, 5rem);
+  }
+}
